@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+body {
+    font-family: sans-serif;
+    background: url(../assets/img/background.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.modal-text {
+    background: #fff;
+    padding: 13px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 300ms all;
+}
+
+.modal-text:hover {
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+}
+
+.modal-text p {
+    font-size: 33px;
+}
+
+
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    margin-top: -20px;
+    background: rgba(0, 0, 0, .6);
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    transition: 400ms all;
+}
+
+.modal.active {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0;
+}
+
+.modal .modal-container {
+    position: relative;
+    max-width: 650px;
+}
+
+.modal .modal-container svg {
+    width: 15px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    fill: crimson;
+    cursor: pointer;
+}
+
+.modal .modal-container svg:hover {
+    transform: scale(1.1);
+}
+
+.modal .modal-container .modal-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.modal .modal-container .modal-row .modal-left {
+    width: 60%;
+}
+
+.modal .modal-container .modal-row .modal-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal .modal-container .modal-row .modal-right p {
+    margin: 10px 0;
+}
+
+.modal .modal-container .modal-row .modal-right button {
+    background: purple;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.modal .modal-container .modal-row .modal-left img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    object-fit: contain;
+}
+
+@media only screen and (max-width:678px) {
+    .modal .modal-container .modal-row .modal-left {
+        width: 100%;
+    }
+
+    .modal .modal-container .modal-row .modal-right {
+        width: 100%;
+    }
+
+    .modal .modal-container .modal-row {
+        flex-direction: column;
+    }
+
+    .modal .modal-container {
+        width: 90%;
+    }
+
+    .modal .modal-container .modal-row .modal-right {
+        padding: 20px 0;
+    }
+}

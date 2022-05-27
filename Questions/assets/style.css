@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+body {
+    font-family: sans-serif;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100%;
+    background: powderblue;
+}
+
+.que {
+    width: 100%;
+}
+
+.que .que-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.que h1 {
+    font-style: oblique;
+    font-size: 50px;
+    color: saddlebrown;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.que .que-area {
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.que .que-area .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.que .que-area .que-text {
+    display: none;
+}
+
+.que .que-area .que-text.active {
+    display: block;
+    border-top: 1px solid rgba(0, 0, 0, .2);
+    padding-top: 10px;
+}
+
+.que .que-area:last-child {
+    margin-bottom: 0;
+}
+
+.minus {
+    width: 20px !important;
+}
+
+.minus.active {
+    fill: red !important;
+}
+
+.title.active {
+    color: red;
+}
+
+@media only screen and (max-width:578px) {
+    .que h1 {
+        font-size: 35px;
+    }
+}
