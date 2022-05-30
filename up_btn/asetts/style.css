@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 250vh;
+    background: rgba(168, 101, 235, 0.487);
+}
+
+.up-btn{
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    background: #fff;
+    border-radius: 50%;
+    width: 60px;
+    display: grid;
+    place-items: center;
+    height: 60px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 400ms all;
+    cursor: pointer;
+}
+
+.up-btn.active{
+    bottom: 30px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.up-btn svg{
+    width: 30px;
+}
