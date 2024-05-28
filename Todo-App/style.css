@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    list-style: none;
+}
+
+html,
+body {
+    font-family: "Nunito Sans", sans-serif;
+    width: 100%;
+    height: 100vh;
+    padding: 0 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #b3cdd1;
+    background-image: linear-gradient(315deg, #b3cdd1 0%, #9fa4c4 74%);
+}
+
+header {
+    margin-bottom: 50px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+main {
+    width: 100%;
+    max-width: 600px;
+}
+
+.todo-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.todo-header button {
+    background: rgba(98, 98, 233, 0.984);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.todo-list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    background: #ffffff8c;
+}
+
+.todo-list ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 7px 10px;
+    transition: 400ms all;
+}
+
+.todo-list ul li div {
+    display: flex;
+    gap: 10px;
+}
+
+.todo-list ul li div div {
+    flex-direction: column;
+    gap: 7px;
+}
+
+.todo-list ul li div div span {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.todo-list ul li div div span.date {
+    color: #60647c;
+    font-size: 14px;
+}
+
+.todo-list ul li.active {
+    background-color: #60647c2b;
+    transform: scale(0.98);
+    opacity: 0.7;
+}
+
+.todo-list ul li div input {
+    width: 20px;
+    accent-color: rgba(98, 98, 233, 0.984);
+}
+
+.todo-list ul li div button {
+    background-color: red;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.todo-list ul li div button:last-child {
+    background-color: #000;
+}
+
+#modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background-color: hsla(0, 0%, 100%, .4);
+    backdrop-filter: blur(5px);
+    visibility: hidden;
+    opacity: 0;
+    transition: 400ms all;
+    margin-top: 20px;
+}
+
+#modal.active {
+    margin-top: 0px;
+    visibility: visible;
+    opacity: 1;
+}
+
+#modal .modal-container {
+    position: relative;
+    z-index: 10;
+    background: #fff;
+    padding: 45px 20px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #00000045;
+}
+
+#modal form {
+    width: 100%;
+}
+
+#modal form input {
+    background: #60647c;
+    padding: 15px;
+    width: 100%;
+    border-radius: 30px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#modal form input::placeholder {
+    color: #fff;
+}
+
+#modal form #add {
+    width: 100%;
+    background: rgba(98, 98, 233, 0.984);
+    color: #fff;
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#modal #close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    background: red;
+    font-size: 20px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+
+#modal #close svg {
+    width: 20px;
+    fill: #fff;
+    height: 20px;
+}
+
+#add.disabled {
+    display: none !important
+}
+
+
+@media only screen and (max-width:578px) {
+    header {
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+}
