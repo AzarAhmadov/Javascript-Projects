@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    list-style: none;
+}
+
+html,
+body {
+    font-family: "Nunito Sans", sans-serif;
+    width: 100%;
+    height: 100vh;
+    padding: 0 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #b3cdd1;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+}
+
+#progress {
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+}
+
+#progress-line {
+    position: absolute;
+    width: 0%;
+    height: 5px;
+    position: absolute;
+    top: 48%;
+    background: #000;
+    transition: 500ms all;
+}
+
+#progress ul {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+#progress ul::after {
+    width: 100%;
+    height: 5px;
+    background-color: #0f0f0f25;
+    z-index: -1;
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.disabled {
+    opacity: 0.5;
+}
+
+#progress ul li {
+    background-color: #061619;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: grid;
+    font-weight: bold;
+    font-size: 20px;
+    place-items: center;
+    color: #fff;
+    transition: 500ms all;
+}
+
+#progress ul li.active {
+    background-color: green;
+}
+
+#progress ul li svg {
+    width: 20px;
+    height: 30px;
+    fill: #fff;
+    display: flex;
+}
+
+#control {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#control button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: #521010;
+    cursor: pointer;
+}
+
+#control button:hover {
+    transform: scale(1.1)
+}
+
+#control button svg {
+    width: 18px;
+    fill: #fff;
+}
