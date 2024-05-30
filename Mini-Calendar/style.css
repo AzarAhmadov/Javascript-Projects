@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    list-style: none;
+}
+
+html,
+body {
+    font-family: "Nunito Sans", sans-serif;
+    width: 100%;
+    height: 100vh;
+    padding: 0 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #b3cdd1;
+    background-image: linear-gradient(315deg, #b3cdd1 0%, #9fa4c4 74%);
+}
+
+#calendar {
+    background: #fff;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#calendar h3 {
+    background: red;
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+    font-size: 25px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#calendar .calendar_data {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 0;
+}
+
+#calendar .calendar_data .week {
+    font-size: 27px;
+    font-weight: 500;
+}
+
+#calendar .calendar_data .day {
+    font-weight: bold;
+    font-size: 40px;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+#calendar .calendar_data .year {
+    font-size: 22px;
+    font-weight: 400;
+}
