@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    list-style: none;
+}
+
+html,
+body {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: #2471A3;
+}
+
+#quiz {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 500px;
+    width: 95%;
+    background: #ffffff68;
+    padding: 25px 30px;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+#score {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #86bfe5;
+    max-width: 400px;
+    text-align: center;
+    width: 95%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#score span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#score button {
+    padding: 10px 25px;
+    margin-top: 20px;
+    background: #2471A3;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#score h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#quiz h3 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #34495E;
+}
+
+#quiz ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#quiz ul li {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    text-align: start;
+}
+
+#quiz ul li input {
+    width: 20px;
+    accent-color: #000;
+    display: flex;
+    flex-shrink: 0;
+}
+
+#quiz ul li p {
+    font-size: 18px;
+}
+
+#submit {
+    background: #2471A3;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
