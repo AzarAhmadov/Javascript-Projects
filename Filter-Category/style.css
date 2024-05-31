@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    list-style: none;
+}
+
+html,
+body {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    padding: 0 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+header {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    width: 100%;
+}
+
+nav ul li button {
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 10px 30px;
+    color: #000;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+nav ul li button.active {
+    background-color: black;
+    color: #fff;
+}
+
+#galary {
+    padding: 30px 0;
+}
+
+#galary ul {
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#galary ul li img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width:578px) {
+    nav ul li button {
+        padding: 10px 17px;
+        font-size: 16px;
+    }
+
+    header {
+        padding-top: 20px;
+        font-size: 17px;
+    }
+
+    #galary ul {
+        gap: 10px;
+    }
+
+    #galary ul li img {
+        width: 100%;
+    }
+}
