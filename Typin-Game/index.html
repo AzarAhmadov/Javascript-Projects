@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Typing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+        <!-- Speed Area -->
+        <section id="speed-area">
+            <h2>
+                Speed Typer
+            </h2>
+
+            <div id="info">
+                <p id="time_left">
+                    Time Left: 10s
+                </p>
+                <p id="result">
+
+                </p>
+            </div>
+
+            <div id="game-area">
+                <h5> Type the following </h5>
+                <span id="speed_words"> </span>
+                <input id="input" type="text" placeholder="Type the word here...">
+            </div>
+
+            <button id="start"> Start </button>
+        </section>
+        <!-- Speed End -->
+
+        <!-- Final Result -->
+        <section class="complete">
+            <h3> Time ran out </h3>
+            <div>
+                <p class="final_score"></p>
+                <button id="play_again">Reload</button>
+            </div>
+        </section>
+        <!-- Final Result End -->
+    </main>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
