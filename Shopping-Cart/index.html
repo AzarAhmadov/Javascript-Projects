@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h2>
+                Product list
+            </h2>
+            <button class="open_basket">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                    <path
+                        d="M253.3 35.1c6.1-11.8 1.5-26.3-10.2-32.4s-26.3-1.5-32.4 10.2L117.6 192H32c-17.7 0-32 14.3-32 32s14.3 32 32 32L83.9 463.5C91 492 116.6 512 146 512H430c29.4 0 55-20 62.1-48.5L544 256c17.7 0 32-14.3 32-32s-14.3-32-32-32H458.4L365.3 12.9C359.2 1.2 344.7-3.4 332.9 2.7s-16.3 20.6-10.2 32.4L404.3 192H171.7L253.3 35.1zM192 304v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16s16 7.2 16 16zm96-16c8.8 0 16 7.2 16 16v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16zm128 16v96c0 8.8-7.2 16-16 16s-16-7.2-16-16V304c0-8.8 7.2-16 16-16s16 7.2 16 16z" />
+                </svg>
+                <span class="basket_count">0</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section id="product">
+            <ul class="products_list">
+            </ul>
+        </section>
+
+        <section class="basket">
+
+            <div class="basket-header">
+                <div>
+                    <span>Cart</span>
+                    <span class="basket_count"></span>
+                </div>
+                <button class="close_basket">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path
+                            d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+
+            <h3 class="empty"> There is no product </h3>
+
+            <ul class="basket_list">
+            </ul>
+
+            <div class="total">
+                <h4>
+                    Total
+                </h4>
+                <span class="total_price">
+                </span>
+            </div>
+
+        </section>
+        
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

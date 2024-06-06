@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    list-style: none;
+}
+
+html,
+body {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #00000029;
+    padding: 0 20px;
+}
+
+header .container {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 19px;
+}
+
+header button {
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+}
+
+header button span {
+    top: -15px;
+    right: -13px;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #34495E;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header button svg {
+    width: 35px;
+    height: 35px;
+}
+
+main {
+    padding: 20px 0;
+}
+
+main #product ul {
+    display: grid;
+    gap: 20px;
+}
+
+main #product ul li {
+    border: 1px solid #0000002b;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background: #f5f5f793;
+}
+
+main #product ul li img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+main #product ul li .title {
+    font-weight: 600;
+    margin-top: 10px;
+    display: block;
+    font-size: 18px;
+}
+
+main #product ul li .price {
+    font-weight: 500;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #34495E;
+}
+
+main #product ul li button {
+    margin-top: 10px;
+    padding: 10px;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 17px;
+    background: #00000069;
+    transition: 400ms all;
+    cursor: pointer;
+}
+
+main #product ul li button:hover {
+    background: #000;
+    color: #fff;
+}
+
+main .basket {
+    position: fixed;
+    right: 0;
+    top: 0;
+    max-width: 600px;
+    width: 100%;
+    height: 100%;
+    background: #34495E;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 400ms all;
+}
+
+main .basket .empty {
+    text-align: center;
+    padding-top: 50px;
+    color: #fff;
+    font-size: 30px;
+}
+
+main .basket.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+main .basket ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    padding-top: 20px;
+    height: 100%;
+    padding-bottom: 120px;
+    overflow: auto;
+}
+
+main .basket ul li {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+main .basket ul li:not(:last-child) {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ffffff42;
+}
+
+main .basket ul li img {
+    width: 150px;
+    object-fit: cover;
+    height: 150px;
+    border-radius: 10px;
+}
+
+main .basket ul li {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 25px;
+}
+
+
+main .basket ul li .basket-left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+main .basket ul li .basket-left .title {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+main .basket ul li .basket-left .price {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+main .basket ul li .basket-left button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid red;
+    color: #fff;
+    font-size: 18px;
+    transition: 300ms all;
+    cursor: pointer;
+    width: max-content;
+}
+
+main .basket ul li .basket-left button:hover {
+    background: red;
+}
+
+main .basket ul li .basket-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+main .basket ul li .basket-right input {
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+main .basket ul li .basket-right button {
+    background: #000;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    font-size: 20px;
+}
+
+main .basket .basket-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ffffff20;
+    padding-bottom: 10px;
+}
+
+main .basket .basket-header span {
+    color: #fff;
+    font-size: 20px;
+}
+
+main .basket .basket-header .close_basket {
+    display: flex;
+    background: transparent;
+    fill: #fff;
+    cursor: pointer;
+}
+
+main .basket .basket-header .close_basket svg {
+    width: 35px;
+    height: 35px;
+}
+
+.total {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #ffffff59;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: #fff;
+    font-size: 23px;
+    background: #34495E;
+}
+
+.quantity {
+    color: #fff;
+    font-size: 20px;
+}
+
+@media (min-width: 360px) {
+    main #product ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main #product ul li .title {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 900px) {
+    main #product ul {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media only screen and (max-width:578px) {
+    main .basket ul li {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .basket-left button {
+        margin: 0 auto;
+    }
+
+    main #product ul li img {
+        height: 150px;
+    }
+
+    main .basket ul li img {
+        height: 150px;
+        width: 170px;
+    }
+}
