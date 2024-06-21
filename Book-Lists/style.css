@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    list-style: none;
+}
+
+html,
+body {
+    font-family: "Poppins", sans-serif;
+    background: #312d2d;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 20px 10px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 35px;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #ffffff20;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form div label {
+    font-size: 19px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+form div input {
+    padding: 13px 10px;
+    border-radius: 5px;
+    background: transparent;
+    border: 1px solid #fff;
+    font-size: 15px;
+    color: #fff;
+}
+
+form div input::placeholder {
+    color: #fff;
+    font-size: 15px;
+}
+
+form button {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-top: 20px;
+    padding: 12px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: 300ms all;
+}
+
+form button:hover {
+    background: #fff;
+    color: #000;
+}
+
+.t-head {
+    max-width: 600px;
+    margin: 40px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.t-head li {
+    border: 1px solid #fff;
+    width: 100%;
+    color: #fff;
+    padding: 10px 12px;
+}
+
+.t-body {
+    margin: 0 auto;
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.t-body-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.t-body li {
+    padding: 10px 12px;
+    width: 100%;
+    color: #fff;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+}
+
+.t-body li img {
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.t-body li button {
+    background: red;
+    color: #fff;
+    width: 100%;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+}
