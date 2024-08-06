@@ -41,7 +41,7 @@ const InputValidation = (inputs, e) => {
     if (!value.trim() && data_required) {
         ErrorMsg(inputs, data_name)
     } else if (value.trim() && data_min && data_min > value.length) {
-        ErrorMsg(inputs, `There must be a minimum of 10 symbols !`)
+        ErrorMsg(inputs, `There must be a minimum of ${data_min} symbols !`)
     } else if (value.trim() && data_email && !validateEmail(value)) {
         ErrorMsg(inputs, `Write the email format correctly !`)
     } else if (value.trim() && data_some_el && value !== data_some_el.value) {
