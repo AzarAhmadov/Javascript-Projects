@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body class="grid place-items-center h-screen px-3">
+
+    <div class="flex flex-col items-center gap-6">
+        <div id="slide_content" class="p-3 border w-[500px]">
+            <div class="relative">
+                <img id="img" class="size-full rounded-md h-[350px] object-cover"
+                    src="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    alt="slide-app">
+
+                <div id="slide_control" class="px-2 absolute inset-0 flex justify-between items-center">
+                    <button data-position="Prev" class="size-[40px] rounded-full bg-[#000]">
+                        <i id="left_btn" class="fa-solid fa-arrow-left text-white text-xl"></i>
+                    </button>
+                    <button data-position="Next" class="size-[40px] rounded-full bg-[#000]">
+                        <i id="right_btn" class="fa-solid fa-arrow-right text-white text-xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="py-3">
+                <h3 id="title" class="mt-2 font-bold">
+                    2016 Mustang GT, San Francisco, United States
+                </h3>
+                <p id="date" class="mt-1 text-[#666666]">
+                    Published on May 17, 2017
+                </p>
+            </div>
+        </div>
+
+        <div id="pagination-div" class="flex gap-2">
+
+        </div>
+    </div>
+
+    <script type="module" src="assets/app.js"></script>
+</body>
+
+</html>
