@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Quiz App </title>
+    <!-- Font Awsome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Fonts CSS -->
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="grid place-items-center min-h-screen p-4 bg-gradient-to-r from-amber-100 to-yellow-50">
+
+    <!-- Initial Load -->
+    <div id="initial_load" class="flex flex-col items-center absolute">
+        <div class="flex items-center gap-4">
+            <h1 class="font-bold text-[35px] md:text-[45px]"> Quiz App </h1>
+            <img class="size-[60px] md:size-[80px] rounded-full object-center"
+                src="https://cdn-icons-gif.flaticon.com/12525/12525300.gif" alt="quiz app">
+        </div>
+        <p class="mt-5 text-lg font-[300]">
+            Test your knowledge using this great app
+        </p>
+
+        <div class="mt-7">
+            <button id="start_game_btn"
+                class="flex items-center gap-2 hover:scale-110 font-medium text-lg md:text-xl bg-[#f7dc6f] rounded-md py-2 px-4">
+                Start Game
+                <img class="size-[30px] md:size-[40px]" src="https://cdn-icons-png.flaticon.com/128/520/520460.png"
+                    alt="smile">
+            </button>
+        </div>
+    </div>
+    <!-- Initial Load -->
+
+    <!-- Content Area -->
+    <div id="content" class="max-w-[600px] w-full mx-auto border modal shadow-xl">
+        <!-- Header -->
+        <header class="bg-[#fff] border-b border-b-[#FFBF00] flex items-center justify-between p-4">
+            <h3 class="font-medium text-xl">Quiz App</h3>
+            <div class="bg-[#626262] flex items-center gap-2 rounded-md py-[5px] px-[8px] text-white text-lg">
+                Time: <span id="set_time"
+                    class="bg-[#FFA722] rounded-md size-[25px] grid place-items-center text-center"></span>
+            </div>
+        </header>
+        <!-- Header -->
+
+        <!-- Main -->
+        <main>
+            <div id="quiz" class="p-[30px] bg-white">
+            </div>
+        </main>
+        <!-- Main -->
+
+        <!-- Footer -->
+        <footer class="flex items-center justify-between p-4 bg-[#fff] border-t border-t-[#FFBF00] ">
+            <div class="flex bg-[#FFA722] gap-1 rounded-md text-white py-2 w-[60px] justify-center">
+                <span id="current_question_number"></span>
+                /
+                <span id="quesion_length">5</span>
+            </div>
+            <button id="next_btn" class="hidden text-white bg-[#2260FF] py-2 px-4 rounded-md flex items-center gap-2">
+                Next Question <i class="fa-solid fa-chevron-right text-sm"></i>
+            </button>
+        </footer>
+        <!-- Footer -->
+
+    </div>
+    <!-- Content Area -->
+
+    <!-- Result -->
+    <div id="result-area" class="bg-white absolute right-auto left-auto border rounded-md max-w-[375px] w-full modal">
+        <h3 class="text-center font-medium text-[22px] py-5 border-b">
+            Result
+        </h3>
+        <div id="result"></div>
+        <div class="flex justify-center pb-5">
+            <button id="restart_btn"
+                class="w-full hover:scale-105 transition-all text-sm mt-5 bg-red-500 py-3 text-white w-max px-5 rounded-full">
+                Restart The Game
+            </button>
+        </div>
+    </div>
+    <!-- Result -->
+
+    <!-- Scripts -->
+    <script type="module" src="./assets/script/app.js"></script>
+</body>
+
+</html>

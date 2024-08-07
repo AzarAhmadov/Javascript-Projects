@@ -1,0 +1,12 @@
+.modal {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.80);
+    transition: 600ms ease-in-out;
+}
+
+.modal.active{
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+}
