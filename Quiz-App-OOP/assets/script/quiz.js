@@ -120,6 +120,10 @@ class Quiz {
         } else {
             this.FinishGame()
         }
+
+        if (this.questions.length - 1 <= this.index) {
+            this.ui.next_btn.innerHTML = 'Finish Quiz'
+        }
     }
 
     RestartGame = () => {
