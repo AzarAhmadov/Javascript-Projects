@@ -11,59 +11,62 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="grid place-items-center min-h-screen p-6">
+<body class="grid place-items-center min-h-screen">
 
     <!-- Form Area Start -->
-    <div class="max-w-[400px] w-full mx-auto border rounded-lg">
-        <h3 class="font-medium text-center border-b py-4 text-[#0D0D0D] text-[20px]">
-            User Register Form
-        </h3>
-        <form id="form" class="p-4 flex flex-col gap-[16px]">
-            <div class="flex flex-col">
-                <label class="mb-2 font-medium" for="name">
-                    Name
-                </label>
-                <input data-min="5" data-required="true" data-message='The name cannot be left blank!' name="name"
-                    class="border rounded-lg h-[40px] outline-none px-2" id="name" type="text">
-            </div>
-            <div class="flex flex-col">
-                <label class="mb-2 font-medium" for="surname">
-                    Surname
-                </label>
-                <input data-min="5" data-required="true" data-message='The surame cannot be left blank!' name="surname"
-                    class="border rounded-lg h-[40px] outline-none px-2" id="surname" type="text">
-            </div>
-            <div class="flex flex-col">
-                <label class="mb-2 font-medium" for="phone">
-                    Phone
-                </label>
-                <input data-phone="true" data-required="true" data-message='The phone cannot be left blank!' name="phone"
-                    class="border rounded-lg h-[40px] outline-none px-2" id="phone" type="text">
-            </div>
-            <div class="flex flex-col">
-                <label class="mb-2 font-medium" for="email">
-                    Email
-                </label>
-                <input data-email="true" data-required="true" data-message='The email cannot be left blank!'
-                    name="email" class="border rounded-lg h-[40px] outline-none px-2" id="email" type="text">
-            </div>
-            <div class="flex flex-col">
-                <label class="mb-2 font-medium" for="password">
-                    Password
-                </label>
-                <input data-min="5" data-required="true" data-message='The password cannot be left blank!'
-                    name="password" class="border rounded-lg h-[40px] outline-none px-2" id="password" type="password">
-            </div>
-            <div class="flex flex-col">
-                <label class="mb-2 font-medium" for="re-password">
-                    Repeat Password
-                </label>
-                <input data-some="password" data-min="5" data-required="true" data-message='The repeat password cannot be left blank!'
-                    name="re-password" class="border rounded-lg h-[40px] outline-none px-2" id="re-password"
-                    type="password">
-            </div>
-            <button class="bg-[#FE3737] text-white font-medium py-2 rounded-lg" type="submit"> Register </button>
-        </form>
+    <div class="px-3 py-5 w-full">
+        <div class="max-w-[400px] w-full border rounded-lg">
+            <h3 class="font-medium text-center border-b py-4 text-[#0D0D0D] text-[20px]">
+                User Register Form
+            </h3>
+            <form id="form" class="p-4 flex flex-col gap-[16px]">
+                <div class="flex flex-col">
+                    <label class="mb-2 font-medium" for="name">
+                        Name
+                    </label>
+                    <input data-min="5" data-required="true" data-message='The name cannot be left blank!' name="name"
+                        class="border rounded-lg h-[40px] outline-none px-2" id="name" type="text">
+                </div>
+                <div class="flex flex-col">
+                    <label class="mb-2 font-medium" for="surname">
+                        Surname
+                    </label>
+                    <input data-min="5" data-required="true" data-message='The surame cannot be left blank!'
+                        name="surname" class="border rounded-lg h-[40px] outline-none px-2" id="surname" type="text">
+                </div>
+                <div class="flex flex-col">
+                    <label class="mb-2 font-medium" for="phone">
+                        Phone
+                    </label>
+                    <input data-phone="true" data-required="true" data-message='The phone cannot be left blank!'
+                        name="phone" class="border rounded-lg h-[40px] outline-none px-2" id="phone" type="text">
+                </div>
+                <div class="flex flex-col">
+                    <label class="mb-2 font-medium" for="email">
+                        Email
+                    </label>
+                    <input data-email="true" data-required="true" data-message='The email cannot be left blank!'
+                        name="email" class="border rounded-lg h-[40px] outline-none px-2" id="email" type="text">
+                </div>
+                <div class="flex flex-col">
+                    <label class="mb-2 font-medium" for="password">
+                        Password
+                    </label>
+                    <input data-min="5" data-required="true" data-message='The password cannot be left blank!'
+                        name="password" class="border rounded-lg h-[40px] outline-none px-2" id="password"
+                        type="password">
+                </div>
+                <div class="flex flex-col">
+                    <label class="mb-2 font-medium" for="re-password">
+                        Repeat Password
+                    </label>
+                    <input data-some="password" data-min="5" data-required="true"
+                        data-message='The repeat password cannot be left blank!' name="re-password"
+                        class="border rounded-lg h-[40px] outline-none px-2" id="re-password" type="password">
+                </div>
+                <button class="bg-[#FE3737] text-white font-medium py-2 rounded-lg" type="submit"> Register </button>
+            </form>
+        </div>
     </div>
     <!-- End Form Area -->
 
