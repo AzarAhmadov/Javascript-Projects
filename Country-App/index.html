@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Country App </title>
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="grid place-items-center min-h-screen px-5 pb-7">
+
+    <div class="w-full grid place-items-center">
+
+        <h1 class="text-center flex justify-center font-[500] py-7 text-[22px] md:text-[30px] flex items-center gap-3">
+            Country App
+            <img class="size-[40px] md:size-[50px]" src="https://cdn-icons-gif.flaticon.com/15591/15591402.gif"
+                alt="Country">
+        </h1>
+
+        <div class="border rounded-md p-5 max-w-[600px] w-full">
+            <div class="relative">
+                <input id="search" class="border p-3 rounded-sm w-full outline-none" type="text"
+                    placeholder="Search by country name  🌎">
+                <ul class="select absolute bg-white w-full border-l border-b border-r"></ul>
+            </div>
+            <div id="country_info"
+                class="flex flex-col gap-5 md:gap-0 items-center text-center md:text-start md:flex-row pt-6"> </div>
+            <div>
+                <h3 id="neighbor_title" class="text-center text-[17px] sm:text-[19px] mt-7 font-[500] border-b pb-3"></h3>
+                <ul id="neighbor" class="grid grid-cols-2 mt-5 md:grid-cols-4 gap-3"></ul>
+            </div>
+        </div>
+        
+    </div>
+
+    <script type="module" src="./assets/js/app.js"></script>
+</body>
+
+</html>

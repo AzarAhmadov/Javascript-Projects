@@ -1,0 +1,13 @@
+.select {
+    opacity: 0;
+    visibility: hidden;
+    overflow-x: auto;
+    max-height: 0;
+    transition: 400ms ease-in-out;
+}
+
+.select.active {
+    opacity: 1;
+    visibility: visible;
+    max-height: 250px;
+}
