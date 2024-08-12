@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> History Game </title>
+    <link rel="stylesheet" href="/assets/css/import.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="grid place-items-center min-h-screen px-3 pb-5">
+
+    <div class="max-w-[700px] w-full">
+
+        <h2 class="font-600 border-b mb-6 pb-5 pt-5 sm:pb-9 sm:pt-9 text-center sm:mb-9 text-[23px] sm:text-[32px]"
+            id="question_title">
+        </h2>
+
+        <main>
+
+            <div class="mb-8 flex-col gap-5 md:gap-0 md:flex-row flex justify-between items-center">
+                <div id="rounds" class="font-500 font-500 text-[20px]">
+                    Round 0 / 6
+                </div>
+                <div class="flex gap-3">
+                    <div class="flex items-center gap-2">
+                        <img class="size-[35px]" src="https://cdn-icons-png.flaticon.com/128/9720/9720724.png"
+                            alt="correct">
+                        <span id="correct_number" class="text-[green] text-[20px] border-r pr-3 border-r-[#000]">
+                            (0)
+                        </span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <img class="size-[35px]" src="https://cdn-icons-png.flaticon.com/128/11695/11695444.png"
+                            alt="wrong">
+                        <span id="wrong_number" class="text-[red] text-[20px]">
+                            (0)
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="cards_area" class="grid grid-cols-2 md:grid-cols-3 gap-3"></div>
+
+            <div id="answer_correct" class="fixed answer inset-x-0 bottom-[20px] grid place-items-center">
+                <span class="text-white flex items-center gap-2 bg-[green] px-4 py-2 font-bold rounded-md text-xl">
+                    Correct
+                    <img class="size-[25px]" src="https://cdn-icons-png.flaticon.com/128/6785/6785304.png"
+                        alt="Correct">
+                </span>
+            </div>
+
+            <div id="answer_wrong" class="fixed answer inset-x-0 bottom-[20px] grid place-items-center">
+                <span class="text-white bg-[red] px-4 py-2 font-bold rounded-md text-xl flex items-center gap-2">
+                    Wrong
+                    <img class="size-[25px]" src="https://cdn-icons-png.flaticon.com/128/12324/12324428.png"
+                        alt="Wrong">
+                </span>
+            </div>
+
+            <div class="modal">
+                <div>
+                    <p id="total_point"> Game over! Total points : 0 </p>
+                    <button id="start_again">start again</button>
+                </div>
+            </div>
+
+            <div class="loading">
+                <img class="size-[200px]" src="https://img.pikbest.com/png-images/20190918/cartoon-snail-loading-loading-gif-animation_2734139.png!bw700" alt="loading_gif">
+            </div>
+
+        </main>
+
+    </div>
+
+    <script type="module" src="./assets/js/app.js"></script>
+</body>
+
+</html>
